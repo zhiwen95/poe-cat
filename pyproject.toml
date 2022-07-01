@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "poe-cat"
+version = "0.1.0"
+description = "POE util"
+authors = ["zhiwen95 <wei.zhiwen@outlook.com>"]
+license = "AGPL"
+
+[tool.poetry.scripts]
+app = "src.poe_cat.main:run"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+keyboard = "^0.13.5"
+mouse = "^0.7.1"
+pywin32 = "^304"
+PyAutoGUI = "^0.9.53"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
